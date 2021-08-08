@@ -1,7 +1,7 @@
 
 from os import name
 from config.wsgi import *
-from core.erp.models import Type
+from core.erp.models import *
 
 
 #ORM de Django
@@ -36,6 +36,6 @@ from core.erp.models import Type
 
 
 
-for i in Type.objects.filter(name__endswith='e')[:2]:
-    print(i.id)
+# for i in Type.objects.filter(name__endswith='e'):
+#     print(i.id)
 
